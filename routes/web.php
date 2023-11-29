@@ -1,6 +1,7 @@
 <?php
-
+use App\Http\Controllers\MyController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[DashboardController::class], 'index');
+
+Route::get('/', [MyController::class, 'index']);
+
+
+Route::get('/fro', [MyController::class, 'frof']);
 
 
 
