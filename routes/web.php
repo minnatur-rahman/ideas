@@ -14,16 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return '<h1>Hello World</h1>';
+    return view('welcome');
 });
 
 
 Route::get('/feed', function () {
-    return '<h1>Hello World</h1>';
+    return view('feed');
 });
 
 
 Route::get('/profile', function () {
-    return '<h1>Hello World</h1>';
+    return view('users.profile');
 });
 
