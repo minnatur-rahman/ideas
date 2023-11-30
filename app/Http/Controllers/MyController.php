@@ -6,19 +6,25 @@ use Illuminate\Http\Request;
 
 class MyController extends Controller
 {
-     public function index(){
+     public function index()
+     {
 
         $users = [
 
          [
-            'name' = 'Alex',
-            'age' = 30,
+            'name' => 'Alex',
+            'age' => 30,
          ],
 
          [
-           'name' = 'Dan',
-           'age' = 25,
-         ]
+           'name' => 'Dan',
+           'age' => 25,
+         ],
+
+         [
+            'name' => 'Jhon',
+            'age' => 17,
+          ]
 
          ];
 
@@ -31,11 +37,5 @@ class MyController extends Controller
 
         );
      }
-
-
-     public function frof(){
-        return view('frofile');
-     }
-
 
 }
