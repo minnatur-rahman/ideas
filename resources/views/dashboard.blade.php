@@ -1,4 +1,4 @@
-<h1>Dashboard</h1>
+
 <!DOCTYPE html>
 <html lang="EN">
 
