@@ -19,8 +19,8 @@ Route::get('/', [MyController::class, 'index']);
 
 
 Route::get('/terms', function(){
-    return view('terms');
 
+    return view('terms');
 
 });
 

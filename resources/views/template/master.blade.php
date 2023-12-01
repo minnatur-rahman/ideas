@@ -1,4 +1,3 @@
-{{-- <h1>Dashboard</h1> --}}
 <!DOCTYPE html>
 <html lang="EN">
 
@@ -6,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-<title> {{ config('app.name') }} </title>
+    <title> {{ config('app.name')}} </title>
 
     <link href="https://bootswatch.com/5/sketchy/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
@@ -17,18 +15,15 @@
 </head>
 
 <body>
-   @include('layout.nav')
-
+    @include('template.nav')
     <div class="container py-4">
-     {{-- page content goes here --}}
+      {{-- page content goes here --}}
      @yield('content')
 
     </div>
-    @include('layout.footer')
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
