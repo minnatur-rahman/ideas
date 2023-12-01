@@ -18,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [MyController::class, 'index']);
 
 
-Route::get('/fro', [MyController::class, 'frof']);
+Route::get('/terms', function(){
+    return view('terms');
+});
 
 
 
