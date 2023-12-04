@@ -20,8 +20,6 @@ Route::get('/', [MyController::class, 'index']);
 
 Route::get('/terms', function(){
 
-    return DB::connection('mysql')->getDatabaseName();
-
     return view('terms');
 
 });
