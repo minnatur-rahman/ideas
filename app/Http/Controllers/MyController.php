@@ -11,14 +11,12 @@ class MyController extends Controller
      {
 
         $idea = new Idea([
-            'content' => 'test',
+            'content' => 'Hollw Youtube',
         ]);
         $idea->save();
 
-        dd(Idea::all());
-
         return view('dashboard',[
-            'idea' =>Idea::all()
+            'ideas' =>Idea::orderBy('created_at', 'DESC')->get()
         ]);
      }
 
