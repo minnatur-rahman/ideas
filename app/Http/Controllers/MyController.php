@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Idea;
 use Illuminate\Http\Request;
 
 class MyController extends Controller
@@ -9,33 +10,16 @@ class MyController extends Controller
      public function index()
      {
 
-        $users = [
+        $idea = new Idea([
+            'content' => 'test',
+        ]);
+        $idea->save();
 
-         [
-            'name' => 'Alex',
-            'age' => 30,
-         ],
+        dd(Idea::all());
 
-         [
-           'name' => 'Dan',
-           'age' => 25,
-         ],
-
-         [
-            'name' => 'Jhon',
-            'age' => 17,
-          ]
-
-         ];
-
-         return view(
-
-            'dashboard',
-             [
-                'userList' => $users
-             ]
-
-        );
+        return view('dashboard',[
+            'idea' =>Idea::all()
+        ]);
      }
 
 }

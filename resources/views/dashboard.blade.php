@@ -52,6 +52,7 @@
                     </div>
                 </div>
                 <hr>
+                @foreach ($ideas as $idea )
                 <div class="mt-3">
                     <div class="card">
                         <div class="px-3 pt-4 pb-2">
@@ -66,6 +67,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="card-body">
                             <p class="fs-6 fw-light text-muted">
                                 comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
@@ -117,6 +119,7 @@
                         </div>
                     </div>
                 </div>
+                @endforeach
             </div>
             <div class="col-3">
                 <div class="card">
