@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> {{ config('app.name')}} </title>
+    <title>{{ config('app.name') }}</title>
 
     <link href="https://bootswatch.com/5/sketchy/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
@@ -15,10 +15,10 @@
 </head>
 
 <body>
-    @include('template.nav')
+    @include('layouts.nav')
     <div class="container py-4">
-      {{-- page content goes here --}}
-     @yield('content')
+          {{-- Page Content Goes Here --}}
+         @yield('content')
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

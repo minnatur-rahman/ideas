@@ -1,10 +1,7 @@
-@extends('template.master')
-
+@extends('layouts.master')
 @section('content')
-
         <h1>Terms</h1>
         <div>
-            looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed magnam sint qui est ipsa possimus, dignissimos eligendi temporibus! At sapiente numquam accusamus eius magni error voluptatibus, repellendus cum esse, molestiae earum animi nam velit vitae quis doloribus explicabo natus. Repudiandae eum, accusantium excepturi mollitia consequatur possimus sequi non nemo! Nemo eveniet consequuntur nesciunt atque tempore saepe illo dolore harum possimus veniam placeat temporibus dolorum porro in quaerat, nulla molestias quam? Provident ipsam nemo enim laudantium similique eaque porro quibusdam aperiam itaque veritatis nam earum explicabo, neque et inventore consequuntur sapiente. Tenetur hic rerum atque. Reprehenderit excepturi ea commodi voluptate voluptatum.
         </div>
-
 @endsection
