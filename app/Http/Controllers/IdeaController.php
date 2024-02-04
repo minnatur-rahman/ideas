@@ -19,9 +19,9 @@ class IdeaController extends Controller
         return redirect()->route('dashboard')->with('success', 'Idea created successfully!!');
     }
 
-    public function destroy($id){
+    public function destroy(Idea $idea){
 
-        $idea = Idea::where('id',$id)->firstOrFail()->delete();
+        $idea->delete();
 
          return redirect()->route('dashboard')->with('success', 'Idea deleted successfully!!');
     }
