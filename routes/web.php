@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
-Route::post('/ideas/{idea}', [IdeaController::class, 'show'])->name('idea.show');
+Route::get('/ideas/{idea}', [IdeaController::class, 'show'])->name('idea.show');
 
 Route::post('/ideas', [IdeaController::class, 'store'])->name('idea.create');
 
